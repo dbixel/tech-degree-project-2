@@ -1,9 +1,40 @@
 
-/*font-family: 'Secular One', sans-serif;*/
+
 body {
   font-family: 'Kanit', sans-serif;
+  width: 320px;
+  text-align: center;
+  margin: auto;
 }
 
-.main-portfolio {
+ul {
   text-align: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+header nav ul {
+  line-height: 3;
+}
+
+.intro{
+  margin-bottom: 90px;
+}
+
+.contact {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  background-color: #F9F9F9;
+}
+
+p {
+  line-height: 1.5;
+}
+
+main div {
+  margin-top: 50px;
 }
