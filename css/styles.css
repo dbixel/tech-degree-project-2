@@ -1,11 +1,16 @@
 
 
 body {
-  font-family: 'Kanit', sans-serif;
+
   width: 320px;
   text-align: center;
   margin: auto;
   background-color: #FCFEFE;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  padding-top: 20px;
 }
 
 ul {
@@ -24,6 +29,17 @@ li {
 img {
   max-width: 100%;
 }
+
+h1 {
+
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Righteous', cursive, sans-serif;
+}
+
 
 header nav ul {
   line-height: 3;
@@ -54,14 +70,16 @@ main div {
 }
 
 footer {
-  padding-top: 20px;
+  height: 50px;
   font-size: 12px;
   background-color: #F9F9F9;
   border-top: 1px #E1E1E1 solid;
+  box-sizing: border-box;
 }
 
 .container {
 	display: flex;
+  padding: 10px;
 }
 
 .item-1 {
