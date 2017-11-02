@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Dan Bixel</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link href="css/normalize.css" rel=stylesheet>
     <link href="css/styles.css" rel=stylesheet>
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
   </head>
+
   <body>
     <div class="container">
       <header id="top" class="main-header">
+      <div class="banner-top clearfix">
+        <h1 class ="name">Dan Bixel</h1>
         <nav class="main-nav">
-          <h1 class ="name">Dan Bixel</h1>
           <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-          <div class="intro">
-            <img class="profile-image" src="img/dan_bixel_and_family.jpg" alt="Picture of Dan and Family">
-            <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-          </div>
+      </div>
+        <div class="intro">
+          <img class="profile-image" src="img/monkey-business.png" alt="Picture of Dan and Family">
+          <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        </div>
       </header>
-        <div>
-          <div class="portfolio-body">
-          <h2 id="portfolio">PORTFOLIO</h2>
 
+      <main>
+        <div class="portfolio-body clearfix">
+          <h2 id="portfolio">Portfolio</h2>
+          <div class="project-container">
             <div class="projects">
               <img src="img/portfolio-1.png" alt="Image of Marketing Page">
               <h3>Marketing Page</h3>
@@ -52,7 +56,7 @@
             <div class="projects">
               <img src="img/portfolio-5.png" alt="Image of Photo Gallery">
               <h3>Photo Gallery</h3>
-              <p>This project shows pictures from a recent trip to the viewer and alows them to easily navigate through photos.</p>
+              <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
             </div>
             <div class="projects">
               <img src="img/portfolio-6.png" alt="Image of Calculator">
@@ -60,18 +64,28 @@
               <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
             </div>
           </div>
-
+        </div>
+      </main>
 
       <footer>
-        <div class="contact">
-          <h2 id="contact">CONTACT</H2>
+        <div class="contact clearfix">
+          <h2 id="contact">Contact</H2>
           <P>If you're interested in chatting or want more information about what I've been working on. I'd love to hear from you!</P>
           <p>Phone +1 (503) 320-5901</p>
           <p>Email <a href="mailto:daniel.bixel@gmail.com?cc=badnice@yahoo.com&bcc=dan.bixel@outlook.com&amp;subject=What%20we%20have%20here%20is...&amp;body=%20...failure%20to%20communicate.">daniel.bixel@gmail.com</a></p>
         </div>
-        <div class="secondary-nav">
-          <div class="item-1">Dan Bixel</div>
-          <div class="item-2"><a href="#top">BACK TO TOP</a></div>
+        <div class="secondary-nav clearfix">
+          <h4>
+            Dan Bixel
+          </h4>
+          <a href="#top" class="footer-link">Back to Top</a>
+          <nav>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
       </footer>
     </div>

@@ -7,21 +7,27 @@ Element Selectors
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
+}
+
+h3  {
+  font-size: 50px:
 }
 
 p {
-  line-height: 1.8; s
+  line-height: 1.5;
+  font-size: 15px;
 }
 
 ul {
   text-align: center;
   list-style: none;
   padding-left: 0;
-  /*display: inline-block;*/
 }
 
 li {
@@ -30,9 +36,9 @@ li {
   margin-right: 10px;*/
   padding-top: 10px;
   padding-left: 10px;
-  padding-right: 10px;
+  /*padding-right: 10px;*/
   padding-bottom: 10px;
-
+  font-size: 20px;
   background-color: #fff;
 }
 
@@ -44,13 +50,6 @@ a {
   text-decoration: none;
 }
 
-/*footer {
-
-  background-color: #F9F9F9;
-
-  /*box-sizing: border-box;*/
-
-
 /*******************************************
 Descendant Selectors
 *******************************************/
@@ -58,12 +57,18 @@ Descendant Selectors
 h1,
 h2,
 h3,
+h4,
 li {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Freckle Face', cursive;
+}
+
+h2,
+a {
+  text-transform: uppercase;
 }
 
 main div {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 /*******************************************
@@ -71,23 +76,29 @@ Class Selectors
 *******************************************/
 
 .main-header {
-  margin-bottom: 90px;
+  margin-bottom: 40px;
 
   overflow: auto;
+}
+
+.banner-top {
 }
 
 .name {
-
+  margin-top: 0;
 }
-
 
 .main-nav {
-  margin-top: 30px;
-  overflow: auto;
+  /*margin-top: 20px;*/
+  /*overflow: auto;*/
 }
 
+/*.main-nav li {
+  float: right;
+}*/
+
 .profile-image {
-  max-width: 50%;
+  max-width: 100%;
   /*margin-top: 30px;*/
   margin-right: 0;
   /*margin-left: 35px;*/
@@ -98,7 +109,7 @@ Class Selectors
   text-align: center;
   padding-right: 1em;
   padding-left: 1em;
-  background-color: lightgray;
+  background-color: #F9F9F9;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -106,11 +117,6 @@ Class Selectors
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: white;
-  overflow: auto;
-}
-
-.portfolio-body img {
-  padding: 10px;
 }
 
 .contact {
@@ -121,20 +127,33 @@ Class Selectors
 }
 
 .secondary-nav {
-  height: 50px;
-  font-size: 12px;
+  height: 75px;
   border-top: 1px #E1E1E1 solid;
-  /*background-color: grey;*/
 }
 
-.item-1 {
+.contact a {
+  text-transform: lowercase;
+}
+
+h4 {
   margin-right: auto;
   padding: 10px;
+  display: inline-block;
+  float: left;
+  font-size: 20px;
 }
 
-.item-2 {
+.footer-link {
   padding: 10px;
+  display: inline-block;
+  float: right;
 }
+
+.footer-list {
+  display: none;
+}
+
+
 
 /*******************************************
 Pseudo Class Selectors
@@ -145,10 +164,20 @@ a:visited {color: grey;}
 a:hover {color: blue;}
 
 /*******************************************
+Clearfix Float
+*******************************************/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*******************************************
 Media Queries
 *******************************************/
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .container {
     width: 80%;
     margin: auto;
@@ -162,31 +191,46 @@ Media Queries
     padding: 1%;*/
   }
 
+  .banner-top li {
+    padding-left: 10px;
+    margin: 0;
+    background-color: inherit;
+
+  }
+
   .main-nav li {
     display: inline-block;
   }
   .profile-image {
     float: right;
     margin-left: 35px;
-    max-width: 250px;
+    max-width: 300px;
   }
 
   .intro p {
     text-align:left;
   }
 
+  /*.project-container {
+    margin: 50px;
+  }*/
+
   .projects {
     float: left;
     width: 50%;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 10px;
   }
 
-  .portfolio-body {
-    margin: 0 auto;
+  .footer-link {
+    display: none;
   }
 
-
+  .footer-list,
+  .footer-list li {
+    display: inline-block;
+    float: right;
+    background-color: inherit;
+  }
 
 }
 @media (min-width: 1024px) {
@@ -196,26 +240,30 @@ Media Queries
   }
 
   .main-nav {
-    margin-bottom: 30px;
-
+    /*margin-bottom: 30px;*/
   }
+
+  .main-nav li {
+    float: right;
+  }
+
    .name,
-   .main-nav li{
+   .main-nav li {
     display: inline-block;
   }
   .profile-image {
     float: right;
     margin-left: 35px;
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .name {
     float: left;
   }
 
-  ul {
+  /*ul {
     float: right;
-  }
+  }*/
 
   .projects {
     float: left;
