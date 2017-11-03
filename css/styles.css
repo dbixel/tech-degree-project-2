@@ -8,7 +8,7 @@ Element Selectors
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 h2 {
@@ -16,12 +16,13 @@ h2 {
 }
 
 h3  {
-  font-size: 50px:
+  font-size: 20px;
 }
 
 p {
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 17px;
+
 }
 
 ul {
@@ -36,7 +37,7 @@ li {
   margin-right: 10px;*/
   padding-top: 10px;
   padding-left: 10px;
-  /*padding-right: 10px;*/
+  padding-right: 10px;
   padding-bottom: 10px;
   font-size: 20px;
   background-color: #fff;
@@ -48,6 +49,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+footer {
+  padding-top: 40px;
 }
 
 /*******************************************
@@ -62,13 +67,16 @@ li {
   font-family: 'Freckle Face', cursive;
 }
 
+h1,
+h2,
+h4,
+p {
+  color: #FFE734;
+}
+
 h2,
 a {
   text-transform: uppercase;
-}
-
-main div {
-  margin-top: 25px;
 }
 
 /*******************************************
@@ -76,13 +84,16 @@ Class Selectors
 *******************************************/
 
 .main-header {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 
   overflow: auto;
 }
 
 .banner-top {
+  margin-top: 20px;
 }
+
+
 
 .name {
   margin-top: 0;
@@ -93,30 +104,53 @@ Class Selectors
   /*overflow: auto;*/
 }
 
-/*.main-nav li {
-  float: right;
-}*/
-
 .profile-image {
-  max-width: 100%;
-  /*margin-top: 30px;*/
-  margin-right: 0;
-  /*margin-left: 35px;*/
-
+  max-width: 70%;
+  /*margin-right: 0;*/
 }
+
 .container {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
   padding-right: 1em;
   padding-left: 1em;
-  background-color: #F9F9F9;
+  /*background-color: #DEDC59;*/
+  background-image: url("../img/black_jungle.jpg");
   font-family: 'Raleway', sans-serif;
 }
 
+/*.main-header h1{
+  color: #FFE734;
+}*/
+
 .portfolio-body {
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: 10px;
-  background-color: white;
+  padding-right: 15px;
+  background-color: #FBFBA1;
+  padding-bottom: 40px;
+}
+
+.portfolio-body h2 {
+  color: #452F2B;
+  padding-bottom: 35px;
+}
+
+.portfoio-body, h3 {
+  color: #452F2B;
+}
+
+.portfolio-body p {
+  color: #452F2B;
+}
+
+.projects {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.projects p {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .contact {
@@ -129,22 +163,29 @@ Class Selectors
 .secondary-nav {
   height: 75px;
   border-top: 1px #E1E1E1 solid;
+  margin-top: 40px;
 }
 
 .contact a {
   text-transform: lowercase;
 }
 
+.contact h2 {
+  padding-bottom: 15px;
+}
+
 h4 {
-  margin-right: auto;
-  padding: 10px;
   display: inline-block;
   float: left;
   font-size: 20px;
 }
 
 .footer-link {
-  padding: 10px;
+  font-size: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top:15px;
+  margin-bottom: 15px;
   display: inline-block;
   float: right;
 }
@@ -153,21 +194,19 @@ h4 {
   display: none;
 }
 
-
-
 /*******************************************
 Pseudo Class Selectors
 *******************************************/
 
-a:link {color: black;}
-a:visited {color: grey;}
-a:hover {color: blue;}
+a:link {color: #FFE734;}
+a:visited {color: #FBFBA1;}
+a:hover {color: #78F8FD;}
 
 /*******************************************
 Clearfix Float
 *******************************************/
 
-.clearfix:after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -185,44 +224,45 @@ Media Queries
   }
 
   .main-header {
-    margin-left: 20px;
-    margin-right: 20px;
-    /*margin; 1%;
-    padding: 1%;*/
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .banner-top li {
     padding-left: 10px;
     margin: 0;
     background-color: inherit;
-
   }
 
   .main-nav li {
     display: inline-block;
   }
   .profile-image {
-    float: right;
+    /*float: right;*/
     margin-left: 35px;
     max-width: 300px;
+  }
+
+  .intro img {
+    float: right;
   }
 
   .intro p {
     text-align:left;
   }
 
-  /*.project-container {
-    margin: 50px;
-  }*/
-
   .projects {
     float: left;
     width: 50%;
-    padding-left: 10px;
   }
 
   .footer-link {
     display: none;
+  }
+
+  .contact {
+    width: 60%;
+    margin: 0 auto;
   }
 
   .footer-list,
@@ -236,11 +276,7 @@ Media Queries
 @media (min-width: 1024px) {
 
   .container {
-    max-width: 1025px;
-  }
-
-  .main-nav {
-    /*margin-bottom: 30px;*/
+    max-width: 1050px;
   }
 
   .main-nav li {
@@ -261,17 +297,9 @@ Media Queries
     float: left;
   }
 
-  /*ul {
-    float: right;
-  }*/
-
   .projects {
     float: left;
     width: 33.3%;
+  }
 
-  }
-  .contact {
-    /*width: 60%;*/
-    margin: 0 auto;
-  }
 }
