@@ -9,6 +9,7 @@ Element Selectors
 
 h1 {
   font-size: 35px;
+  padding-top: 10px;
 }
 
 h2 {
@@ -24,6 +25,7 @@ h4 {
   float: left;
   font-size: 18px;
   margin-left: 15px;
+  padding-top: 5px;
 }
 
 p {
@@ -66,7 +68,6 @@ Descendant Selectors
 
 h1,
 h2,
-h3,
 h4,
 li {
   font-family: 'Freckle Face', cursive;
@@ -143,6 +144,7 @@ Class Selectors
 
 .portfoio-body, h3 {
   color: #452F2B;
+  font-weight: bolder;
 }
 
 .portfolio-body p {
@@ -215,18 +217,20 @@ Class Selectors
 
 
 .footer-link {
-  font-size: 17px;
+  font-size: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top:15px;
   margin-right: 15px;
   display: inline-block;
   float: right;
+  font-family: 'Freckle Face', cursive;
 }
 
 .footer-list {
   display: none;
   padding-right: 5px;
+  padding-top: 5px;
 }
 
 /*******************************************
